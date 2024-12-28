@@ -1,0 +1,53 @@
+Computer Science Department
+
+Pre-Requisite Verification Form
+
+All students are required to fill out and submit this form as Activity 01 to blackboard.
+Remember to zip up this from to submit it correctly. 
+
+If a student violates an admission condition or does not have the required prerequisites for a course in which the student is registered, 
+the student may still have to take the prerequisite before being allowed to graduate. 
+It is the student's responsibility to satisfy all prerequisite requirements.
+
+Note: Students dropped from classes due to lack of prerequisites will not receive tuition refund.
+
+Student Name: Winston Shih
+
+UTD ID #:   2021455389
+
+Student Department: Computer Science (Erik Jonsson)
+
+Course Name:  Systems Programming in UNIX and Other Environments                               Number:       CS 3377                            Section: ____001____
+
+Prerequisites for this Course:
+
+1. What are the prerequisites listed in the catalog for this course:
+
+Prerequisite: (CE 2336 or CS 2336 or CS 2337) with a grade of C or better or equivalent.
+
+CS3377 Course Pre-requisites, Co-requisites, and/or Other Restrictions: 
+
+Computer Science I and II (CS 1337 and CS 2336 or CS 2337 or equivalent courses) and have Basic Object Oriented Programming Skills.
+
+Course Description:
+
+CS 3377 C/C++ Programming in a UNIX Environment (3 semester credit hours)
+
+Advanced programming techniques utilizing procedural and object oriented programming in a UNIX
+environment. Topics include basic UNIX concepts, file input and output, implementation of strings, and
+dynamic memory allocation/management. Design and implementation of a comprehensive programming project is required. 
+
+Prerequisite: (CE 2336 or CS 2336 or TE 2336) with a grade of C or better or equivalent. (Same as SE 3377) (3-0) S
+
+2.  Have you satisfied the prerequisites for this course? Yes __Yes___ No _____
+
+3.  If yes, where did you complete the prerequisites for this course?
+
+UTD Yes ____
+
+No __No__ Other University Name: ______Collin College______________________
+
+I verify that I have no outstanding waiver/transfer request for these prerequisites. Yes
+
+If you do not have the prerequisites for this course, you must
+obtain the instructor's approval to take it.

@@ -1,0 +1,88 @@
+1.
+#A token is a sequence of one or more characters.
+#An argument is an argument that a linux command acts on.
+#An option is an argument that can change a command's effects.
+# The difference is that options start with hypen while arguments do not.
+2.
+#Example of a command line with zero argument:
+{cslinux1:~} ls
+02  activities  activity02  activty02  barfile  dateinfo.txt  dog  hello  perl5  public_html  savescreen.txt  test  Test  two  whoisthere  whoson.txt  WINDOWS  work
+{cslinux1:~}
+#Example of a command line with one argument:
+{cslinux1:~} cat test
+cat: test: Is a directory
+{cslinux1:~}
+#Example of a command line with two arguments:
+{cslinux1:~} cp test testcopy
+cp: omitting directory ‘test’
+#Example of a command line with one option and one argument:
+{cslinux1:~} ls -l dog
+-r--r--r-- 1 wxs190012 sn 0 Feb  5 17:20 dog
+{cslinux1:~}
+3.
+{cslinux1:~} ls -r
+work        whoisthere  test            perl5  dateinfo.txt  activity02
+WINDOWS     two         savescreen.txt  hello  barfile       activities
+whoson.txt  Test        public_html     dog    activty02     02
+{cslinux1:~} ls -l -r
+total 528
+drwx--x--x 3 wxs190012 sn     24 Feb  5 16:17 work
+drwxr-xr-x 3 wxs190012 ints   24 Jan 24  2023 WINDOWS
+-rw------- 1 wxs190012 sn   8411 Feb  5 16:30 whoson.txt
+-rw------- 1 wxs190012 sn   8355 Feb  5 16:35 whoisthere
+drwx--x--x 2 wxs190012 sn     21 Feb  5 17:03 two
+drwx--x--x 3 wxs190012 sn     28 Jan 29 16:29 Test
+drwx--x--x 3 wxs190012 sn     54 Jan 29 16:29 test
+-rw------- 1 wxs190012 sn     24 Feb  5 16:27 savescreen.txt
+drwx--x--x 2 wxs190012 ints    0 Jul  1  2020 public_html
+drwxr-xr-x 2 wxs190012 sn      0 Jan 22 16:24 perl5
+drwx--x--x 2 wxs190012 sn      0 Jan 29 14:27 hello
+-r--r--r-- 1 wxs190012 sn      0 Feb  5 17:20 dog
+-rw------- 1 wxs190012 sn     29 Feb  5 16:29 dateinfo.txt
+lrwxrwxrwx 1 wxs190012 sn     12 Jan 24 16:46 barfile -> test/barfile
+drwx--x--x 2 wxs190012 sn      0 Jan 25 12:59 activty02
+drwx--x--x 2 wxs190012 sn     28 Jan 25 13:29 activity02
+drwx--x--x 3 wxs190012 sn     20 Jan 22 16:40 activities
+drwx--x--x 2 wxs190012 sn     45 Jan 24 16:30 02
+{cslinux1:~} cp -r /home/012/w/wx/wxs190012/two /home/012/w/wx/wxs190012/test
+{cslinux1:~} head -n 5 whoson.txt
+nxp210055 pts/0        2024-02-05 14:28 (10.160.183.45)
+axt210116 pts/1        2024-02-05 14:46 (10.50.242.157)
+mvn140330 pts/2        2024-02-04 11:23 (10.50.240.14)
+fxf210009 pts/3        2024-02-05 14:35 (10.50.242.253)
+ssl210010 pts/4        2024-02-05 16:23 (10.50.240.194)
+{cslinux1:~} tail -n 5 whoson.txt
+abn210005 pts/147      2024-02-05 16:25 (10.50.241.193)
+cxk210010 pts/148      2024-02-05 16:25 (10.176.219.98)
+vsn200002 pts/149      2024-02-05 16:27 (10.50.244.240)
+rnc220000 pts/150      2024-02-05 16:28 (10.50.241.197)
+jxd210047 pts/151      2024-02-05 16:29 (10.176.204.55)
+{cslinux1:~}
+4.
+#A builtin is a utility that is already built into a shell.
+#The difference between a utility and builtin is that a builtin is part of the shell, while a utility needs to be downloaded.
+{cslinux1:~} man bash
+{cslinux1:~} echo CS 3377
+CS 3377
+{cslinux1:~}
+5.
+{cslinux1:~} echo hi there
+hi there
+{cslinux1:~} echo hello there
+hello there
+{cslinux1:~}
+6.
+{cslinux1:~} cd /usr/bin
+{cslinux1:/usr/bin} echo *ab*
+ab abrt-action-analyze-backtrace abrt-action-analyze-c abrt-action-analyze-ccpp-local abrt-action-analyze-core abrt-action-analyze-java abrt-action-analyze-oops abrt-action-analyze-python abrt-action-analyze-vmcore abrt-action-analyze-vulnerability abrt-action-analyze-xorg abrt-action-check-oops-for-hw-error abrt-action-generate-backtrace abrt-action-generate-core-backtrace abrt-action-install-debuginfo abrt-action-list-dsos abrt-action-notify abrt-action-perform-ccpp-analysis abrt-action-save-kernel-data abrt-action-save-package-data abrt-action-trim-files abrt-applet abrt-cli abrt-dump-oops abrt-dump-xorg abrt-handle-upload abrt-merge-pstoreoops abrt-retrace-client abrt-watch-log abs2rel akonadi_kabc_resource alsabat baobab crontab Enable-iDRACAccessHostRoute Enable-iDRACSNMPTrap.sh gnome-abrt grub2-render-label ibus-table-createdb iptables-xml kabc2mutt kabcclient mate-about mate-about-me mlabel onto2vocabularyclass pamtable pgmabel pmloglabel ppmlabel psfaddtable psfgettable psfstriptable psfxtable scl_enabled slabinfo slabtop snmptable system-config-abrt tabs telepathy-gabble-xmpp-console update-desktop-database update-mime-database urlgrabber xserver-sdk-abi-requires
+{cslinux1:/usr/bin} echo [u]*
+ucs2any ucx_info ucx_perftest ucx_read_profile udevadm udisksctl uic3 uic-qt4 uil ul ulockmgr_server umask umount unalias uname uncompress unexpand unicode_start unicode_stop uniq units units_cur unix2dos unix2mac unix-lpr.sh unlink unlz4 unlzma unmunch unoconv unopkg unpack200 unshare unwrapdiff unxz unzip unzipsfx update-ca-trust updatedb update-desktop-database update-gtk-immodules update-mime-database updmap updmap-sys upower uptime urlgrabber usb-devices usbhid-dump userformat userinfo usermount userpasswd users usleep usx2yloader utmpdump uuclient uuidgen uxterm uz
+{cslinux1:/usr/bin} echo un*
+unalias uname uncompress unexpand unicode_start unicode_stop uniq units units_cur unix2dos unix2mac unix-lpr.sh unlink unlz4 unlzma unmunch unoconv unopkg unpack200 unshare unwrapdiff unxz unzip unzipsfx
+{cslinux1:/usr/bin} echo ?
+[ w X
+{cslinux1:/usr/bin} cd
+{cslinux1:~} echo .bash*
+.bash_history .bash_profile .bashrc
+{cslinux1:~}
+

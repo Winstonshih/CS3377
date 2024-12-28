@@ -1,0 +1,51 @@
+{cslinux1:~} g++ -std=c++11 calculate.cpp -o calculate
+{cslinux1:~} g++ -std=c++11 forkexecvp.cpp -o forkexecvp
+{cslinux1:~} ./forkexecvp randomnumber.txt 100 100
+
+./forkexecvp randomnumber.txt 100 100
+Parent pid : 36194 to Child Process No : 0
+Send Message : sum
+Parent pid : 36194 to Child Process No : 1
+Send Message : average
+Child pid : 36195 Child Process No : 0
+ Received Message : sum
+Child pid : 36195 Child Process No : 0
+execvp(./calculate, ./calculate, randomnumber.txt
+Parent pid : 36194 to Child Process No : 2
+Child pid : 36196 Child Process No : 1
+Send Message : greatest
+ Received Message : average
+Child pid : 36196 Child Process No : 1
+execvp(./calculate, ./calculate, randomnumber.txt
+Child pid : 36197 Child Process No : 2
+Parent pid : 36194 to Child Process No : 3
+ Received Message : greatest
+Send Message : least
+Child pid : 36197 Child Process No : 2
+Parent pid: 36194 Start - Wait for all calculate children to finish
+execvp(./calculate, ./calculate, randomnumber.txt
+Child pid : 36198 Child Process No : 3
+ Received Message : least
+Child pid : 36198 Child Process No : 3
+execvp(./calculate, ./calculate, randomnumber.txt
+Parent pid: 36194 Done - Wait for all calculate children to finish
+Parent pid : 36194 Use execvp() cat to display answer files:
+Child pid : 36199
+cat answersum.txt
+Parent pid: 36194 Start - Wait for all calculate children to finish
+Child pid : 36200
+cat answeraverage.txt
+Child pid : 36201
+cat answergreatest.txt
+Child pid : 36202
+cat answerleast.txt
+./calculate sum randomnumber.txt
+Sum      : 4658
+./calculate average randomnumber.txt
+Average  : 46.58
+./calculate greatest randomnumber.txt
+Greatest : 100
+./calculate least randomnumber.txt
+Least    : 1
+Parent pid: 36194 Done - Wait for all calculate children to finish
+{cslinux1:~}

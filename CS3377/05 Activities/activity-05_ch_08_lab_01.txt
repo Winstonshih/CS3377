@@ -1,0 +1,405 @@
+1.
+  echo 'hi there comet'
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT -- 
+2.
+{cslinux1:~} cat short
+echo 'hi there comet'
+{cslinux1:~} ./short
+-bash: ./short: Permission denied
+{cslinux1:~} ls -l
+total 744
+drwx--x--x 2 wxs190012 sn       45 Jan 24 16:30 02
+drwx--x--x 3 wxs190012 sn       20 Jan 22 16:40 activities
+drwx--x--x 2 wxs190012 sn       28 Jan 25 13:29 activity02
+drwx--x--x 2 wxs190012 sn        0 Jan 25 12:59 activty02
+lrwxrwxrwx 1 wxs190012 sn       12 Jan 24 16:46 barfile -> test/barfile
+-rw------- 1 wxs190012 sn       29 Feb  5 16:29 dateinfo.txt
+-rw------- 1 wxs190012 sn       57 Feb 12 17:31 days
+-r--r--r-- 1 wxs190012 sn        0 Feb  5 17:20 dog
+drwx--x--x 2 wxs190012 sn        0 Jan 29 14:27 hello
+-rw------- 1 wxs190012 sn   303464 Feb 12 17:34 ls.out
+drwxr-xr-x 2 wxs190012 sn        0 Jan 22 16:24 perl5
+drwx--x--x 2 wxs190012 ints      0 Jul  1  2020 public_html
+-rw------- 1 wxs190012 sn       13 Feb 12 17:27 savescreen.txt
+-rw------- 1 wxs190012 sn       22 Feb 14 16:43 short
+drwx--x--x 4 wxs190012 sn       75 Feb 12 17:04 test
+drwx--x--x 3 wxs190012 sn       28 Jan 29 16:29 Test
+drwx--x--x 2 wxs190012 sn       21 Feb  5 17:03 two
+-rw------- 1 wxs190012 sn     8355 Feb  5 16:35 whoisthere
+-rw------- 1 wxs190012 sn     8411 Feb  5 16:30 whoson.txt
+drwxr-xr-x 3 wxs190012 ints     24 Jan 24  2023 WINDOWS
+drwx--x--x 3 wxs190012 sn       24 Feb  5 16:17 work
+
+{cslinux1:~}
+3.
+{cslinux1:~} chmod +x short
+{cslinux1:~} ls -l
+total 744
+drwx--x--x 2 wxs190012 sn       45 Jan 24 16:30 02
+drwx--x--x 3 wxs190012 sn       20 Jan 22 16:40 activities
+drwx--x--x 2 wxs190012 sn       28 Jan 25 13:29 activity02
+drwx--x--x 2 wxs190012 sn        0 Jan 25 12:59 activty02
+lrwxrwxrwx 1 wxs190012 sn       12 Jan 24 16:46 barfile -> test/barfile
+-rw------- 1 wxs190012 sn       29 Feb  5 16:29 dateinfo.txt
+-rw------- 1 wxs190012 sn       57 Feb 12 17:31 days
+-r--r--r-- 1 wxs190012 sn        0 Feb  5 17:20 dog
+drwx--x--x 2 wxs190012 sn        0 Jan 29 14:27 hello
+-rw------- 1 wxs190012 sn   303464 Feb 12 17:34 ls.out
+drwxr-xr-x 2 wxs190012 sn        0 Jan 22 16:24 perl5
+drwx--x--x 2 wxs190012 ints      0 Jul  1  2020 public_html
+-rw------- 1 wxs190012 sn       13 Feb 12 17:27 savescreen.txt
+-rwx--x--x 1 wxs190012 sn       22 Feb 14 16:43 short
+drwx--x--x 4 wxs190012 sn       75 Feb 12 17:04 test
+drwx--x--x 3 wxs190012 sn       28 Jan 29 16:29 Test
+drwx--x--x 2 wxs190012 sn       21 Feb  5 17:03 two
+-rw------- 1 wxs190012 sn     8355 Feb  5 16:35 whoisthere
+-rw------- 1 wxs190012 sn     8411 Feb  5 16:30 whoson.txt
+drwxr-xr-x 3 wxs190012 ints     24 Jan 24  2023 WINDOWS
+drwx--x--x 3 wxs190012 sn       24 Feb  5 16:17 work
+{cslinux1:~} ./short
+hi there comet
+{cslinux1:~}
+4.
+{cslinux1:~} vim short
+#!/bin/bash
+echo 'hi there comet'
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT --  
+{cslinux1:~} ./short
+hi there comet
+{cslinux1:~}
+5.
+{cslinux1:~} vim short
+#!/bin/bash
+#The code will print 'hi there comet' on command line when the code is executed
+echo 'hi there comet'
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT -- 
+6.
+#!/bin/sh
+#This script sends first argument on command line it was called with to standard output.
+echo $1
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT --  
+{cslinux1:~} chmod +x first
+{cslinux1:~} ./first hello
+hello
+{cslinux1:~} 
+7.
+{cslinux1:~} vim cptobak
+#!/bin/bash
+cp $1 $1.bak
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT --  
+{cslinux1:~} chmod +x cptobak
+{cslinux1:~} ./cptobak first
+{cslinux1:~} ls -l
+total 840
+drwx--x--x 2 wxs190012 sn       45 Jan 24 16:30 02
+drwx--x--x 3 wxs190012 sn       20 Jan 22 16:40 activities
+drwx--x--x 2 wxs190012 sn       28 Jan 25 13:29 activity02
+drwx--x--x 2 wxs190012 sn        0 Jan 25 12:59 activty02
+lrwxrwxrwx 1 wxs190012 sn       12 Jan 24 16:46 barfile -> test/barfile
+-rwx--x--x 1 wxs190012 sn       25 Feb 14 18:18 cptobak
+-rw------- 1 wxs190012 sn       29 Feb  5 16:29 dateinfo.txt
+-rw------- 1 wxs190012 sn       57 Feb 12 17:31 days
+-r--r--r-- 1 wxs190012 sn        0 Feb  5 17:20 dog
+-rwx--x--x 1 wxs190012 sn      103 Feb 14 18:09 first
+-rwx--x--x 1 wxs190012 sn      103 Feb 14 18:19 first.bak
+drwx--x--x 2 wxs190012 sn        0 Jan 29 14:27 hello
+-rw------- 1 wxs190012 sn   303464 Feb 12 17:34 ls.out
+drwxr-xr-x 2 wxs190012 sn        0 Jan 22 16:24 perl5
+-rw------- 1 wxs190012 sn        0 Feb 14 17:29 practice
+drwx--x--x 2 wxs190012 ints      0 Jul  1  2020 public_html
+-rw------- 1 wxs190012 sn       13 Feb 12 17:27 savescreen.txt
+-rwx--x--x 1 wxs190012 sn      114 Feb 14 18:01 short
+drwx--x--x 4 wxs190012 sn       75 Feb 12 17:04 test
+drwx--x--x 3 wxs190012 sn       28 Jan 29 16:29 Test
+drwx--x--x 2 wxs190012 sn       21 Feb  5 17:03 two
+-rw------- 1 wxs190012 sn     8355 Feb  5 16:35 whoisthere
+-rw------- 1 wxs190012 sn     8411 Feb  5 16:30 whoson.txt
+drwxr-xr-x 3 wxs190012 ints     24 Jan 24  2023 WINDOWS
+drwx--x--x 3 wxs190012 sn       24 Feb  5 16:17 work
+{cslinux1:~}
+{cslinux1:~} touch "hello there"
+{cslinux1:~} ls -l
+total 888
+drwx--x--x 2 wxs190012 sn       45 Jan 24 16:30 02
+drwx--x--x 3 wxs190012 sn       20 Jan 22 16:40 activities
+drwx--x--x 2 wxs190012 sn       28 Jan 25 13:29 activity02
+drwx--x--x 2 wxs190012 sn        0 Jan 25 12:59 activty02
+lrwxrwxrwx 1 wxs190012 sn       12 Jan 24 16:46 barfile -> test/barfile
+-rwx--x--x 1 wxs190012 sn       25 Feb 14 18:18 cptobak
+-rw------- 1 wxs190012 sn       29 Feb  5 16:29 dateinfo.txt
+-rw------- 1 wxs190012 sn       57 Feb 12 17:31 days
+-r--r--r-- 1 wxs190012 sn        0 Feb  5 17:20 dog
+-rwx--x--x 1 wxs190012 sn      103 Feb 14 18:09 first
+-rwx--x--x 1 wxs190012 sn      103 Feb 14 18:19 first.bak
+drwx--x--x 2 wxs190012 sn        0 Feb 14 18:22 hello
+-rw------- 1 wxs190012 sn        0 Feb 14 18:26 hello there
+-rw------- 1 wxs190012 sn   303464 Feb 12 17:34 ls.out
+drwxr-xr-x 2 wxs190012 sn        0 Jan 22 16:24 perl5
+-rw------- 1 wxs190012 sn        0 Feb 14 17:29 practice
+drwx--x--x 2 wxs190012 ints      0 Jul  1  2020 public_html
+-rw------- 1 wxs190012 sn       13 Feb 12 17:27 savescreen.txt
+-rwx--x--x 1 wxs190012 sn      114 Feb 14 18:01 short
+drwx--x--x 4 wxs190012 sn       75 Feb 12 17:04 test
+drwx--x--x 3 wxs190012 sn       28 Jan 29 16:29 Test
+-rw------- 1 wxs190012 sn        0 Feb 14 18:22 there
+drwx--x--x 2 wxs190012 sn       21 Feb  5 17:03 two
+-rw------- 1 wxs190012 sn     8355 Feb  5 16:35 whoisthere
+-rw------- 1 wxs190012 sn     8411 Feb  5 16:30 whoson.txt
+drwxr-xr-x 3 wxs190012 ints     24 Jan 24  2023 WINDOWS
+drwx--x--x 3 wxs190012 sn       24 Feb  5 16:17 work
+{cslinux1:~} ./cptobak "hello there"
+cp: target ‘there.bak’ is not a directory
+{cslinux1:~} vim cptobak
+#!/bin/bash
+cp "$1" "$1.bak"
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT --  
+{cslinux1:~} ./cptobak "hello there"
+{cslinux1:~} ls -l
+total 936
+drwx--x--x 2 wxs190012 sn       45 Jan 24 16:30 02
+drwx--x--x 3 wxs190012 sn       20 Jan 22 16:40 activities
+drwx--x--x 2 wxs190012 sn       28 Jan 25 13:29 activity02
+drwx--x--x 2 wxs190012 sn        0 Jan 25 12:59 activty02
+lrwxrwxrwx 1 wxs190012 sn       12 Jan 24 16:46 barfile -> test/barfile
+-rwx--x--x 1 wxs190012 sn       29 Feb 14 18:30 cptobak
+-rw------- 1 wxs190012 sn        0 Feb 14 18:28 cyptobak
+-rw------- 1 wxs190012 sn       29 Feb  5 16:29 dateinfo.txt
+-rw------- 1 wxs190012 sn       57 Feb 12 17:31 days
+-r--r--r-- 1 wxs190012 sn        0 Feb  5 17:20 dog
+-rwx--x--x 1 wxs190012 sn      103 Feb 14 18:09 first
+-rwx--x--x 1 wxs190012 sn      103 Feb 14 18:19 first.bak
+drwx--x--x 2 wxs190012 sn        0 Feb 14 18:22 hello
+-rw------- 1 wxs190012 sn        0 Feb 14 18:26 hello there
+-rw------- 1 wxs190012 sn        0 Feb 14 18:31 hello there.bak
+-rw------- 1 wxs190012 sn   303464 Feb 12 17:34 ls.out
+drwxr-xr-x 2 wxs190012 sn        0 Jan 22 16:24 perl5
+-rw------- 1 wxs190012 sn        0 Feb 14 17:29 practice
+drwx--x--x 2 wxs190012 ints      0 Jul  1  2020 public_html
+-rw------- 1 wxs190012 sn       13 Feb 12 17:27 savescreen.txt
+-rwx--x--x 1 wxs190012 sn      114 Feb 14 18:01 short
+drwx--x--x 4 wxs190012 sn       75 Feb 12 17:04 test
+drwx--x--x 3 wxs190012 sn       28 Jan 29 16:29 Test
+-rw------- 1 wxs190012 sn        0 Feb 14 18:22 there
+drwx--x--x 2 wxs190012 sn       21 Feb  5 17:03 two
+-rw------- 1 wxs190012 sn     8355 Feb  5 16:35 whoisthere
+-rw------- 1 wxs190012 sn     8411 Feb  5 16:30 whoson.txt
+drwxr-xr-x 3 wxs190012 ints     24 Jan 24  2023 WINDOWS
+drwx--x--x 3 wxs190012 sn       24 Feb  5 16:17 work
+{cslinux1:~}
+
+

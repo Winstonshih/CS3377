@@ -1,0 +1,33 @@
+1.
+{cslinux1:~} cd
+{cslinux1:~} pwd
+/home/012/w/wx/wxs190012
+{cslinux1:~}
+2.
+{cslinux1:~} mkdir two
+{cslinux1:~} file two
+two: directory
+{cslinux1:~}
+3.
+{cslinux1:~} cd two
+{cslinux1:~/two} pwd
+/home/012/w/wx/wxs190012/two
+{cslinux1:~/two}
+4.
+{cslinux1:~/two} vim two/fox
+{cslinux1:~/two} ls
+fox
+{cslinux1:~/two}
+5.
+{cslinux1:~/two} ls /home/012/w/wx/wxs190012/two
+fox
+{cslinux1:~/two}
+6.
+{cslinux1:~/two} cd
+{cslinux1:~} ls two
+fox
+{cslinux1:~}
+7.
+{cslinux1:~} rmdir two
+rmdir: failed to remove ‘two’: Directory not empty
+{cslinux1:~}

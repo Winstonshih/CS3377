@@ -1,0 +1,34 @@
+1.
+{cslinux1:~} touch dog
+{cslinux1:~} ls dog
+dog
+{cslinux1:~}
+2.
+{cslinux1:~} ls -l dog
+-rw------- 1 wxs190012 sn 0 Feb  5 17:20 dog
+{cslinux1:~}
+# wxs190012 (me/owner) owns the file
+# The group is sn.
+# The owner has read and write permissions.
+# The group gets no permission.
+# Others get no permission.
+3.
+{cslinux1:~} ls -l /bin/batch
+-rwxr-xr-x 1 root root 137 May 18  2022 /bin/batch
+{cslinux1:~}
+# The root is the owner of the file.
+# The root's group is root.
+# The owner has read, write, and execute permissions.
+# The group has read and execute permissions.
+# Others have execute permission.
+# We have only execute permission since we are considered part of others.
+4.
+{cslinux1:~} ls -l dog
+-rw------- 1 wxs190012 sn 0 Feb  5 17:20 dog
+{cslinux1:~} chmod 600 dog
+{cslinux1:~} ls -l dog
+-rw------- 1 wxs190012 sn 0 Feb  5 17:20 dog
+{cslinux1:~} chmod 444 dog
+{cslinux1:~} ls -l dog
+-r--r--r-- 1 wxs190012 sn 0 Feb  5 17:20 dog
+{cslinux1:~}

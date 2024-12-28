@@ -1,0 +1,753 @@
+1.
+{cslinux1:~/Test} mkdir activity02
+{cslinux1:~/Test} ls -l
+total 32
+drwx--x--x 2 wxs190012 sn 0 Jan 29 16:29 activity02
+{cslinux1:~/Test}
+2.
+{cslinux1:~/Test} cd activity02
+{cslinux1:~/Test/activity02}
+3.
+{cslinux1:~/Test/activity02} vim practice
+
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+"practice" [New File] 
+4.
+{cslinux1:~/Test/activity02} vim practice
+
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT --    
+5.
+Hello, there 
+How are you 
+May the force be with you 
+Bye Felicia 
+Good bye! 
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT --     
+6.
+Hello, there 
+How are you 
+May the force be with you 
+Bye Felicia 
+Good bye! 
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~      
+7.
+Hello, there 
+How are you 
+May the force be with you 
+Bye Felicia 
+Good bye! 
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+:wq!
+8.
+{cslinux1:~/Test/activity02} ls -l
+total 24
+-rw------- 1 wxs190012 sn 108 Jan 29 16:34 practice
+{cslinux1:~/Test/activity02}
+9.
+{cslinux1:~/Test/activity02} ls
+practice
+{cslinux1:~/Test/activity02}
+10.
+{cslinux1:~/Test/activity02} ls practice
+practice
+{cslinux1:~/Test/activity02}
+11.
+{cslinux1:~/Test/activity02} cat practice
+Hello, there
+How are you
+May the force be with you
+Bye Felicia
+Good bye!
+{cslinux1:~/Test/activity02}
+12.
+{cslinux1:~/Test/activity02} cp practice practice02
+{cslinux1:~/Test/activity02}
+13.
+{cslinux1:~/Test/activity02} rm practice
+rm: remove regular file ‘practice’? yes
+{cslinux1:~/Test/activity02}
+14.
+{cslinux1:~/Test/activity02} ls practice
+ls: cannot access practice: No such file or directory
+{cslinux1:~/Test/activity02} cat practice
+cat: practice: No such file or directory
+{cslinux1:~/Test/activity02}
+15.
+{cslinux1:~/Test/activity02} less /etc/services
+# /etc/services:
+# $Id: services,v 1.55 2013/04/14 ovasik Exp $
+#
+# Network services, Internet style
+# IANA services version: last updated 2013-04-10
+#
+# Note that it is presently the policy of IANA to assign a single well-known
+# port number for both TCP and UDP; hence, most entries here have two entries
+# even if the protocol doesn't support UDP operations.
+# Updated from RFC 1700, ``Assigned Numbers'' (October 1994).  Not all ports
+# are included, only the more common ones.
+#
+# The latest IANA port assignments can be gotten from
+#       http://www.iana.org/assignments/port-numbers
+# The Well Known Ports are those from 0 through 1023.
+# The Registered Ports are those from 1024 through 49151
+# The Dynamic and/or Private Ports are those from 49152 through 65535
+#
+# Each line describes one service, and is of the form:
+#
+# service-name  port/protocol  [aliases ...]   [# comment]
+
+tcpmux          1/tcp                           # TCP port service multiplexer
+tcpmux          1/udp                           # TCP port service multiplexer
+16.
+{cslinux1:~/Test/activity02} head /etc/services
+# /etc/services:
+# $Id: services,v 1.55 2013/04/14 ovasik Exp $
+#
+# Network services, Internet style
+# IANA services version: last updated 2013-04-10
+#
+# Note that it is presently the policy of IANA to assign a single well-known
+# port number for both TCP and UDP; hence, most entries here have two entries
+# even if the protocol doesn't support UDP operations.
+# Updated from RFC 1700, ``Assigned Numbers'' (October 1994).  Not all ports
+{cslinux1:~/Test/activity02}
+17.
+{cslinux1:~/Test/activity02} tail /etc/services
+3gpp-cbsp       48049/tcp               # 3GPP Cell Broadcast Service Protocol
+isnetserv       48128/tcp               # Image Systems Network Services
+isnetserv       48128/udp               # Image Systems Network Services
+blp5            48129/tcp               # Bloomberg locator
+blp5            48129/udp               # Bloomberg locator
+com-bardac-dw   48556/tcp               # com-bardac-dw
+com-bardac-dw   48556/udp               # com-bardac-dw
+iqobject        48619/tcp               # iqobject
+iqobject        48619/udp               # iqobject
+matahari        49000/tcp               # Matahari Broker
+{cslinux1:~/Test/activity02}
+
+18.
+{cslinux1:~/Test/activity02} hostname
+cslinux1.utdallas.edu
+{cslinux1:~/Test/activity02}
+19.
+{cslinux1:~/Test/activity02} mv practice02 practicesave
+{cslinux1:~/Test/activity02} ls -l practicesave
+-rw------- 1 wxs190012 sn 78 Jan 29 16:39 practicesave
+{cslinux1:~/Test/activity02}
+20.
+{cslinux1:~/Test/activity02} grep 'you' practicesave
+How are you
+May the force be with you
+{cslinux1:~/Test/activity02}
+21.
+{cslinux1:~/Test/activity02} vim days
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+Sunday
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT --                                                                                                                                   
+22.
+{cslinux1:~/Test/activity02} sort days
+Friday
+Monday
+Saturday
+Sunday
+Thursday
+Tuesday
+Wednesday
+{cslinux1:~/Test/activity02}
+23.
+{cslinux1:~/Test/activity02} file days
+days: ASCII text
+{cslinux1:~/Test/activity02}
+24.
+{cslinux1:~/Test/activity02} file /etc/*
+/etc/\:                                ASCII text
+/etc/1:                                ASCII text
+/etc/a2ps:                             directory
+/etc/a2ps.cfg:                         ASCII text
+/etc/a2ps-site.cfg:                    ASCII text
+/etc/abrt:                             directory
+/etc/acpi:                             directory
+/etc/adjtime:                          ASCII text
+/etc/akonadi:                          directory
+/etc/aliases:                          ASCII text
+/etc/aliases.db:                       Berkeley DB (Hash, version 9, native byte                                                                              -order)
+/etc/aliases.rpmnew:                   ASCII text
+/etc/alsa:                             directory
+/etc/alternatives:                     directory
+/etc/anacrontab:                       regular file, no read permission
+/etc/ant.conf:                         ASCII text
+/etc/ant.d:                            directory
+/etc/asound.conf:                      ASCII text
+/etc/at.deny:                          very short file (no magic)
+/etc/audisp:                           directory
+/etc/audit:                            directory
+/etc/auto.direct:                      ASCII text
+/etc/auto.direct.170106:               ASCII text
+/etc/autofs.conf:                      ASCII text
+/etc/autofs_ldap_auth.conf:            regular file, no read permission
+/etc/auto.master:                      ASCII text
+/etc/auto.master._20220314-163753:     regular file, no read permission
+/etc/auto.master._20230106-153909:     regular file, no read permission
+/etc/auto.master._20230124-093436:     regular file, no read permission
+/etc/auto.master._before_ipa_client:   ASCII text
+/etc/auto.master.d:                    directory
+/etc/auto.master.orig:                 ASCII text
+/etc/auto.misc:                        ASCII text
+/etc/auto.net:                         Bourne-Again shell script, ASCII text exe                                                                              cutable
+/etc/auto.smb:                         Bourne-Again shell script, ASCII text exe                                                                              cutable
+/etc/avahi:                            directory
+/etc/bash_completion.d:                directory
+/etc/bashrc:                           ASCII text
+/etc/binfmt.d:                         directory
+/etc/bluetooth:                        directory
+/etc/bonobo-activation:                directory
+/etc/brltty:                           directory
+/etc/brltty.conf:                      assembler source, UTF-8 Unicode text
+/etc/centos-release:                   ASCII text
+/etc/centos-release-upstream:          ASCII text
+/etc/certmonger:                       directory
+/etc/cgconfig.conf:                    ASCII text
+/etc/cgconfig.d:                       directory
+/etc/cgrules.conf:                     ASCII text
+/etc/cgsnapshot_blacklist.conf:        ASCII text
+/etc/chkconfig.d:                      directory
+/etc/chrony.conf:                      ASCII text
+/etc/chrony.conf.rpmnew:               ASCII text
+/etc/chrony.keys:                      regular file, no read permission
+/etc/chrony.keys.rpmnew:               regular file, no read permission
+/etc/cifs-utils:                       directory
+/etc/cockpit:                          directory
+/etc/cron.d:                           directory
+/etc/cron.daily:                       directory
+/etc/cron.deny:                        empty
+/etc/cron.hourly:                      directory
+/etc/cron.monthly:                     directory
+/etc/crontab:                          ASCII text
+/etc/cron.weekly:                      directory
+/etc/crypttab:                         empty
+/etc/csh.cshrc:                        ASCII text
+/etc/csh.login:                        ASCII text
+/etc/cups:                             directory
+/etc/cupshelpers:                      directory
+/etc/dbus-1:                           directory
+/etc/dconf:                            directory
+/etc/default:                          directory
+/etc/depmod.d:                         directory
+/etc/dhcp:                             directory
+/etc/DIR_COLORS:                       ASCII text
+/etc/DIR_COLORS.256color:              ASCII text
+/etc/DIR_COLORS.lightbgcolor:          ASCII text
+/etc/dleyna-server-service.conf:       ASCII text
+/etc/dnsmasq.conf:                     ASCII text
+/etc/dnsmasq.d:                        directory
+/etc/dracut.conf:                      ASCII text
+/etc/dracut.conf.d:                    directory
+/etc/e2fsck.conf:                      ASCII text
+/etc/edac:                             directory
+/etc/egl:                              directory
+/etc/elinks.conf:                      ASCII text
+/etc/enscript.cfg:                     ASCII text
+/etc/environment:                      empty
+/etc/ethertypes:                       ASCII text
+/etc/exports:                          empty
+/etc/exports.d:                        directory
+/etc/extlinux.conf:                    broken symbolic link to `../boot/extlinux                                                                              /extlinux.conf'
+/etc/fail2ban:                         directory
+/etc/favicon.png:                      symbolic link to `/usr/share/icons/hicolo                                                                              r/16x16/apps/fedora-logo-icon.png'
+/etc/fcoe:                             directory
+/etc/festival:                         directory
+/etc/filesystems:                      ASCII text
+/etc/filezilla:                        directory
+/etc/firefox:                          directory
+/etc/firewalld:                        directory
+/etc/flatpak:                          directory
+/etc/fonts:                            directory
+/etc/foomatic:                         directory
+/etc/fprintd.conf:                     ASCII text
+/etc/fstab:                            ASCII text
+/etc/fuse.conf:                        ASCII text
+/etc/fwupd:                            directory
+/etc/gconf:                            directory
+/etc/gcrypt:                           directory
+/etc/gdbinit:                          ASCII text
+/etc/gdbinit.d:                        directory
+/etc/gdm:                              directory
+/etc/geoclue:                          directory
+/etc/GeoIP.conf:                       ASCII text
+/etc/ghostscript:                      directory
+/etc/gimp:                             directory
+/etc/glvnd:                            directory
+/etc/gnome-vfs-2.0:                    directory
+/etc/gnupg:                            directory
+/etc/GREP_COLORS:                      ASCII text
+/etc/groff:                            directory
+/etc/group:                            ASCII text
+/etc/group-:                           ASCII text
+/etc/grub2.cfg:                        broken symbolic link to `../boot/grub2/gr                                                                              ub.cfg'
+/etc/grub.d:                           directory
+/etc/gshadow:                          regular file, no read permission
+/etc/gshadow-:                         regular file, no read permission
+/etc/gss:                              directory
+/etc/gssproxy:                         directory
+/etc/hba.conf:                         regular file, no read permission
+/etc/hba.conf.010518-21_37_10.bak:     regular file, no read permission
+/etc/hba.conf.010919-12_58_44.bak:     regular file, no read permission
+/etc/hba.conf.013119-17_52_52.bak:     regular file, no read permission
+/etc/hba.conf.020119-09_31_23.bak:     regular file, no read permission
+/etc/hba.conf.020419-06_18_42.bak:     regular file, no read permission
+/etc/hba.conf.031218-10_35_58.bak:     regular file, no read permission
+/etc/hba.conf.050918-10_36_17.bak:     regular file, no read permission
+/etc/hba.conf.051018-11_34_42.bak:     regular file, no read permission
+/etc/hba.conf.051319-13_47_57.bak:     regular file, no read permission
+/etc/hba.conf.051719-14_42_48.bak:     regular file, no read permission
+/etc/hba.conf.060418-15_45_59.bak:     regular file, no read permission
+/etc/hba.conf.060419-16_58_28.bak:     regular file, no read permission
+/etc/hba.conf.061418-09_28_20.bak:     regular file, no read permission
+/etc/hba.conf.081318-11_45_04.bak:     regular file, no read permission
+/etc/hba.conf.110718-16_59_33.bak:     regular file, no read permission
+/etc/hba.conf.121918-08_02_10.bak:     regular file, no read permission
+/etc/highlight:                        directory
+/etc/host.conf:                        ASCII text
+/etc/hostname:                         ASCII text
+/etc/hosts:                            ASCII text
+/etc/hosts.allow:                      ASCII text
+/etc/hosts.deny:                       ASCII text
+/etc/hp:                               directory
+/etc/html2psrc:                        ASCII text
+/etc/idmapd.conf:                      regular file, no read permission
+/etc/idmapd.conf._bak:                 regular file, no read permission
+/etc/idmapd.conf.ipabkp:               ASCII text
+/etc/ImageMagick-6:                    directory
+/etc/init.d:                           symbolic link to `rc.d/init.d'
+/etc/inittab:                          ASCII text
+/etc/inputrc:                          ASCII text
+/etc/ipa:                              directory
+/etc/iproute2:                         directory
+/etc/ipsec.conf:                       ASCII text
+/etc/ipsec.d:                          directory
+/etc/ipsec.secrets:                    regular file, no read permission
+/etc/iscsi:                            directory
+/etc/issue:                            ASCII text
+/etc/issue.181018:                     ASCII text
+/etc/issue.d:                          directory
+/etc/issue.net:                        symbolic link to `issue'
+/etc/issue.net.ORIG:                   ASCII text
+/etc/issue.NEW:                        ASCII text, with escape sequences
+/etc/issue.ORIG:                       ASCII text
+/etc/java:                             directory
+/etc/jvm:                              directory
+/etc/jvm-commmon:                      directory
+/etc/jwhois.conf:                      ASCII text
+/etc/kde:                              directory
+/etc/kde4rc:                           ASCII text
+/etc/kderc:                            ASCII text
+/etc/kdump.conf:                       ASCII text
+/etc/kdump.conf.rpmnew:                ASCII text
+/etc/kernel:                           directory
+/etc/krb5.conf:                        ASCII text
+/etc/krb5.conf._20220314-163753:       empty
+/etc/krb5.conf._20230106-153909:       empty
+/etc/krb5.conf._20230124-093436:       empty
+/etc/krb5.conf._bak:                   regular file, no read permission
+/etc/krb5.conf._before_ipa_client:     empty
+/etc/krb5.conf.d:                      directory
+/etc/krb5.conf.ipabkp:                 empty
+/etc/krb5.keytab:                      regular file, no read permission
+/etc/ksmtuned.conf:                    ASCII text
+/etc/ksysguarddrc:                     ASCII text
+/etc/latrace.d:                        directory
+/etc/ld.so.cache:                      data
+/etc/ld.so.conf:                       ASCII text
+/etc/ld.so.conf.d:                     directory
+/etc/libaudit.conf:                    regular file, no read permission
+/etc/libblockdev:                      directory
+/etc/libibverbs.d:                     directory
+/etc/libnl:                            directory
+/etc/libpaper.d:                       directory
+/etc/libreport:                        directory
+/etc/libuser.conf:                     ASCII text
+/etc/libvirt:                          directory
+/etc/lightdm:                          directory
+/etc/locale.conf:                      ASCII text
+/etc/localtime:                        symbolic link to `../usr/share/zoneinfo/A                                                                              merica/Chicago'
+/etc/login.defs:                       ASCII text
+/etc/login.defs.rpmnew:                ASCII text
+/etc/logrotate.conf:                   ASCII text
+/etc/logrotate.d:                      directory
+/etc/logwatch:                         directory
+/etc/lsb-release.d:                    directory
+/etc/lsm:                              directory
+/etc/lvm:                              directory
+/etc/lynx.cfg:                         ASCII text
+/etc/lynx.lss:                         ASCII text
+/etc/lynx-site.cfg:                    ASCII text
+/etc/machine-id:                       ASCII text
+/etc/magic:                            magic text file for file(1) cmd, ASCII te                                                                              xt
+/etc/mailcap:                          ASCII text
+/etc/mail.rc:                          ASCII text
+/etc/makedumpfile.conf.sample:         ASCII text
+/etc/man_db.conf:                      ASCII text
+/etc/mate-settings-daemon:             directory
+/etc/maven:                            directory
+/etc/mfs:                              directory
+/etc/mime.types:                       UTF-8 Unicode text
+/etc/mke2fs.conf:                      ASCII text
+/etc/modprobe.d:                       directory
+/etc/modulefiles:                      directory
+/etc/modules-load.d:                   directory
+/etc/motd:                             ASCII text
+/etc/motd_05-10-2016:                  empty
+/etc/motd.160525:                      ASCII text
+/etc/motd.d:                           directory
+/etc/mtab:                             symbolic link to `/proc/self/mounts'
+/etc/mtools.conf:                      ASCII text
+/etc/multipath:                        directory
+/etc/my.cnf:                           ASCII text
+/etc/my.cnf.d:                         directory
+/etc/nanorc:                           ASCII text
+/etc/netconfig:                        ASCII text
+/etc/NetworkManager:                   directory
+/etc/networks:                         ASCII text
+/etc/nfs.conf:                         ASCII text
+/etc/nfsmount.conf:                    ASCII text
+/etc/nscd.conf:                        ASCII text
+/etc/nslcd.conf:                       regular file, no read permission
+/etc/nsswitch.conf:                    ASCII text
+/etc/nsswitch.conf._20220314-163753:   regular file, no read permission
+/etc/nsswitch.conf._20230106-153909:   regular file, no read permission
+/etc/nsswitch.conf._20230124-093436:   regular file, no read permission
+/etc/nsswitch.conf.bak:                ASCII text
+/etc/nsswitch.conf._before_ipa_client: ASCII text
+/etc/nsswitch.conf.ipabkp:             ASCII text
+/etc/nsswitch.conf.orig:               ASCII text
+/etc/nsswitch.conf.rpmnew:             ASCII text
+/etc/ntp:                              directory
+/etc/ntp.conf:                         ASCII text
+/etc/numad.conf:                       ASCII text
+/etc/odbcinst.ini:                     ASCII text
+/etc/oddjob:                           directory
+/etc/oddjobd.conf:                     XML 1.0 document, ASCII text
+/etc/oddjobd.conf.d:                   directory
+/etc/omreg.cfg:                        symbolic link to `/opt/dell/srvadmin/etc/                                                                              omreg.cfg'
+/etc/omreg.ini:                        ASCII text
+/etc/openldap:                         directory
+/etc/openmpi-x86_64:                   directory
+/etc/openvpn:                          directory
+/etc/openwsman:                        directory
+/etc/opt:                              directory
+/etc/os-release:                       symbolic link to `../usr/lib/os-release'
+/etc/PackageKit:                       directory
+/etc/pam.d:                            directory
+/etc/papersize:                        ASCII text
+/etc/passwd:                           ASCII text
+/etc/passwd-:                          ASCII text
+/etc/passwd.161006:                    ASCII text
+/etc/pbm2ppa.conf:                     ASCII text
+/etc/pcp:                              directory
+/etc/pcp.conf:                         ASCII text
+/etc/pcp.env:                          ASCII text
+/etc/Pegasus:                          directory
+/etc/php.d:                            directory
+/etc/php.ini:                          ASCII text
+/etc/pinforc:                          ASCII text
+/etc/pkcs11:                           directory
+/etc/pki:                              directory
+/etc/plymouth:                         directory
+/etc/pm:                               directory
+/etc/pnm2ppa.conf:                     ASCII text
+/etc/polkit-1:                         directory
+/etc/popt.d:                           directory
+/etc/portreserve:                      directory
+/etc/postfix:                          directory
+/etc/ppp:                              directory
+/etc/prelink.conf:                     ASCII text
+/etc/prelink.conf.d:                   directory
+/etc/printcap:                         ASCII text
+/etc/profile:                          ASCII text
+/etc/profile.d:                        directory
+/etc/protocols:                        ASCII text
+/etc/pulse:                            directory
+/etc/purple:                           directory
+/etc/python:                           directory
+/etc/qemu-ga:                          directory
+/etc/qemu-kvm:                         directory
+/etc/radvd.conf:                       ASCII text
+/etc/rc0.d:                            symbolic link to `rc.d/rc0.d'
+/etc/rc1.d:                            symbolic link to `rc.d/rc1.d'
+/etc/rc2.d:                            symbolic link to `rc.d/rc2.d'
+/etc/rc3.d:                            symbolic link to `rc.d/rc3.d'
+/etc/rc4.d:                            symbolic link to `rc.d/rc4.d'
+/etc/rc5.d:                            symbolic link to `rc.d/rc5.d'
+/etc/rc6.d:                            symbolic link to `rc.d/rc6.d'
+/etc/rc.d:                             directory
+/etc/rc.local:                         symbolic link to `rc.d/rc.local'
+/etc/rdma:                             directory
+/etc/redhat-lsb:                       directory
+/etc/redhat-release:                   symbolic link to `centos-release'
+/etc/request-key.conf:                 ASCII text
+/etc/request-key.d:                    directory
+/etc/resolv.conf:                      ASCII text
+/etc/rpc:                              ASCII text
+/etc/rpm:                              directory
+/etc/rsyncd.conf:                      ASCII text
+/etc/rsyslog.conf:                     ASCII text
+/etc/rsyslog.d:                        directory
+/etc/rwtab:                            ASCII text
+/etc/rwtab.d:                          directory
+/etc/samba:                            directory
+/etc/sane.d:                           directory
+/etc/sasl2:                            directory
+/etc/scl:                              directory
+/etc/screenrc:                         ASCII text
+/etc/securetty:                        regular file, no read permission
+/etc/security:                         directory
+/etc/selinux:                          directory
+/etc/services:                         C source, ASCII text
+/etc/sestatus.conf:                    ASCII text
+/etc/setroubleshoot:                   directory
+/etc/setuptool.d:                      directory
+/etc/sgml:                             directory
+/etc/shadow:                           regular file, no read permission
+/etc/shadow-:                          regular file, no read permission
+/etc/shells:                           ASCII text
+/etc/shells.rpmnew:                    ASCII text
+/etc/skel:                             directory
+/etc/slp.conf:                         ASCII text
+/etc/slp.spi:                          ASCII text
+/etc/smartmontools:                    directory
+/etc/snmp:                             directory
+/etc/sos.conf:                         ASCII text
+/etc/sound:                            directory
+/etc/speech-dispatcher:                directory
+/etc/ssh:                              directory
+/etc/ssl:                              directory
+/etc/sssd:                             directory
+/etc/statetab:                         ASCII text
+/etc/statetab.d:                       directory
+/etc/subgid:                           empty
+/etc/subuid:                           empty
+/etc/subversion:                       directory
+/etc/sudo.conf:                        regular file, no read permission
+/etc/sudoers:                          regular file, no read permission
+/etc/sudoers.d:                        directory
+/etc/sudoers.lecture:                  ASCII text
+/etc/sudoers.rpmnew:                   regular file, no read permission
+/etc/sudo-ldap.conf:                   regular file, no read permission
+/etc/sysconfig:                        directory
+/etc/sysctl.conf:                      ASCII text
+/etc/sysctl.conf.rpmnew:               ASCII text
+/etc/sysctl.d:                         directory
+/etc/systemd:                          directory
+/etc/system-release:                   symbolic link to `centos-release'
+/etc/system-release-cpe:               ASCII text
+/etc/target:                           directory
+/etc/tcsd.conf:                        regular file, no read permission
+/etc/telegraf:                         directory
+/etc/terminfo:                         directory
+/etc/tmpfiles.d:                       directory
+/etc/Trolltech.conf:                   ASCII text
+/etc/trusted-key.key:                  ASCII text, with very long lines, with CR                                                                              LF line terminators
+/etc/tuned:                            directory
+/etc/udev:                             directory
+/etc/udisks2:                          directory
+/etc/unbound:                          directory
+/etc/updatedb.conf:                    ASCII text, with very long lines
+/etc/UPower:                           directory
+/etc/vconsole.conf:                    ASCII text
+/etc/vimrc:                            ASCII text, with escape sequences
+/etc/virc:                             ASCII text, with escape sequences
+/etc/virtuoso:                         directory
+/etc/vmware-tools:                     directory
+/etc/vpnc:                             directory
+/etc/wgetrc:                           ASCII text
+/etc/wpa_supplicant:                   directory
+/etc/X11:                              directory
+/etc/xdg:                              directory
+/etc/xinetd.conf:                      regular file, no read permission
+/etc/xinetd.d:                         directory
+/etc/xml:                              directory
+/etc/xrdb:                             directory
+/etc/yp.conf:                          ASCII text
+/etc/yum:                              directory
+/etc/yum.conf:                         ASCII text
+/etc/yum.repos.d:                      directory
+/etc/zlogin:                           ASCII text
+/etc/zlogout:                          ASCII text
+/etc/zprofile:                         ASCII text
+/etc/zshenv:                           ASCII text
+/etc/zshrc:                            ASCII text
+{cslinux1:~/Test/activity02}
+

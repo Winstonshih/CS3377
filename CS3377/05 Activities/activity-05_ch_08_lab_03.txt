@@ -1,0 +1,479 @@
+1.
+{cslinux1:~} head /etc/services
+# /etc/services:
+# $Id: services,v 1.55 2013/04/14 ovasik Exp $
+#
+# Network services, Internet style
+# IANA services version: last updated 2013-04-10
+#
+# Note that it is presently the policy of IANA to assign a single well-known
+# port number for both TCP and UDP; hence, most entries here have two entries
+# even if the protocol doesn't support UDP operations.
+# Updated from RFC 1700, ``Assigned Numbers'' (October 1994).  Not all ports
+{cslinux1:~} ls /etc
+\                               locale.conf
+1                               localtime
+a2ps                            login.defs
+a2ps.cfg                        login.defs.rpmnew
+a2ps-site.cfg                   logrotate.conf
+abrt                            logrotate.d
+acpi                            logwatch
+adjtime                         lsb-release.d
+akonadi                         lsm
+aliases                         lvm
+aliases.db                      lynx.cfg
+aliases.rpmnew                  lynx.lss
+alsa                            lynx-site.cfg
+alternatives                    machine-id
+anacrontab                      magic
+ant.conf                        mailcap
+ant.d                           mail.rc
+asound.conf                     makedumpfile.conf.sample
+at.deny                         man_db.conf
+audisp                          mate-settings-daemon
+audit                           maven
+auto.direct                     mfs
+auto.direct.170106              mime.types
+autofs.conf                     mke2fs.conf
+autofs_ldap_auth.conf           modprobe.d
+auto.master                     modulefiles
+auto.master._20220314-163753    modules-load.d
+auto.master._20230106-153909    motd
+auto.master._20230124-093436    motd_05-10-2016
+auto.master._before_ipa_client  motd.160525
+auto.master.d                   motd.d
+auto.master.orig                mtab
+auto.misc                       mtools.conf
+auto.net                        multipath
+auto.smb                        my.cnf
+avahi                           my.cnf.d
+bash_completion.d               nanorc
+bashrc                          netconfig
+binfmt.d                        NetworkManager
+bluetooth                       networks
+bonobo-activation               nfs.conf
+brltty                          nfsmount.conf
+brltty.conf                     nscd.conf
+centos-release                  nslcd.conf
+centos-release-upstream         nsswitch.conf
+certmonger                      nsswitch.conf._20220314-163753
+cgconfig.conf                   nsswitch.conf._20230106-153909
+cgconfig.d                      nsswitch.conf._20230124-093436
+cgrules.conf                    nsswitch.conf.bak
+cgsnapshot_blacklist.conf       nsswitch.conf._before_ipa_client
+chkconfig.d                     nsswitch.conf.ipabkp
+chrony.conf                     nsswitch.conf.orig
+chrony.conf.rpmnew              nsswitch.conf.rpmnew
+chrony.keys                     ntp
+chrony.keys.rpmnew              ntp.conf
+cifs-utils                      numad.conf
+cockpit                         odbcinst.ini
+cron.d                          oddjob
+cron.daily                      oddjobd.conf
+cron.deny                       oddjobd.conf.d
+cron.hourly                     omreg.cfg
+cron.monthly                    omreg.ini
+crontab                         openldap
+cron.weekly                     openmpi-x86_64
+crypttab                        openvpn
+csh.cshrc                       openwsman
+csh.login                       opt
+cups                            os-release
+cupshelpers                     PackageKit
+dbus-1                          pam.d
+dconf                           papersize
+default                         passwd
+depmod.d                        passwd-
+dhcp                            passwd.161006
+DIR_COLORS                      pbm2ppa.conf
+DIR_COLORS.256color             pcp
+DIR_COLORS.lightbgcolor         pcp.conf
+dleyna-server-service.conf      pcp.env
+dnsmasq.conf                    Pegasus
+dnsmasq.d                       php.d
+dracut.conf                     php.ini
+dracut.conf.d                   pinforc
+e2fsck.conf                     pkcs11
+edac                            pki
+egl                             plymouth
+elinks.conf                     pm
+enscript.cfg                    pnm2ppa.conf
+environment                     polkit-1
+ethertypes                      popt.d
+exports                         portreserve
+exports.d                       postfix
+extlinux.conf                   ppp
+fail2ban                        prelink.conf
+favicon.png                     prelink.conf.d
+fcoe                            printcap
+festival                        profile
+filesystems                     profile.d
+filezilla                       protocols
+firefox                         pulse
+firewalld                       purple
+flatpak                         python
+fonts                           qemu-ga
+foomatic                        qemu-kvm
+fprintd.conf                    radvd.conf
+fstab                           rc0.d
+fuse.conf                       rc1.d
+fwupd                           rc2.d
+gconf                           rc3.d
+gcrypt                          rc4.d
+gdbinit                         rc5.d
+gdbinit.d                       rc6.d
+gdm                             rc.d
+geoclue                         rc.local
+GeoIP.conf                      rdma
+ghostscript                     redhat-lsb
+gimp                            redhat-release
+glvnd                           request-key.conf
+gnome-vfs-2.0                   request-key.d
+gnupg                           resolv.conf
+GREP_COLORS                     rpc
+groff                           rpm
+group                           rsyncd.conf
+group-                          rsyslog.conf
+grub2.cfg                       rsyslog.d
+grub.d                          rwtab
+gshadow                         rwtab.d
+gshadow-                        samba
+gss                             sane.d
+gssproxy                        sasl2
+hba.conf                        scl
+hba.conf.010518-21_37_10.bak    screenrc
+hba.conf.010919-12_58_44.bak    securetty
+hba.conf.013119-17_52_52.bak    security
+hba.conf.020119-09_31_23.bak    selinux
+hba.conf.020419-06_18_42.bak    services
+hba.conf.031218-10_35_58.bak    sestatus.conf
+hba.conf.050918-10_36_17.bak    setroubleshoot
+hba.conf.051018-11_34_42.bak    setuptool.d
+hba.conf.051319-13_47_57.bak    sgml
+hba.conf.051719-14_42_48.bak    shadow
+hba.conf.060418-15_45_59.bak    shadow-
+hba.conf.060419-16_58_28.bak    shells
+hba.conf.061418-09_28_20.bak    shells.rpmnew
+hba.conf.081318-11_45_04.bak    skel
+hba.conf.110718-16_59_33.bak    slp.conf
+hba.conf.121918-08_02_10.bak    slp.spi
+highlight                       smartmontools
+host.conf                       snmp
+hostname                        sos.conf
+hosts                           sound
+hosts.allow                     speech-dispatcher
+hosts.deny                      ssh
+hp                              ssl
+html2psrc                       sssd
+idmapd.conf                     statetab
+idmapd.conf._bak                statetab.d
+idmapd.conf.ipabkp              subgid
+ImageMagick-6                   subuid
+init.d                          subversion
+inittab                         sudo.conf
+inputrc                         sudoers
+ipa                             sudoers.d
+iproute2                        sudoers.lecture
+ipsec.conf                      sudoers.rpmnew
+ipsec.d                         sudo-ldap.conf
+ipsec.secrets                   sysconfig
+iscsi                           sysctl.conf
+issue                           sysctl.conf.rpmnew
+issue.181018                    sysctl.d
+issue.d                         systemd
+issue.net                       system-release
+issue.net.ORIG                  system-release-cpe
+issue.NEW                       target
+issue.ORIG                      tcsd.conf
+java                            telegraf
+jvm                             terminfo
+jvm-commmon                     tmpfiles.d
+jwhois.conf                     Trolltech.conf
+kde                             trusted-key.key
+kde4rc                          tuned
+kderc                           udev
+kdump.conf                      udisks2
+kdump.conf.rpmnew               unbound
+kernel                          updatedb.conf
+krb5.conf                       UPower
+krb5.conf._20220314-163753      vconsole.conf
+krb5.conf._20230106-153909      vimrc
+krb5.conf._20230124-093436      virc
+krb5.conf._bak                  virtuoso
+krb5.conf._before_ipa_client    vmware-tools
+krb5.conf.d                     vpnc
+krb5.conf.ipabkp                wgetrc
+krb5.keytab                     wpa_supplicant
+ksmtuned.conf                   X11
+ksysguarddrc                    xdg
+latrace.d                       xinetd.conf
+ld.so.cache                     xinetd.d
+ld.so.conf                      xml
+ld.so.conf.d                    xrdb
+libaudit.conf                   yp.conf
+libblockdev                     yum
+libibverbs.d                    yum.conf
+libnl                           yum.repos.d
+libpaper.d                      zlogin
+libreport                       zlogout
+libuser.conf                    zprofile
+libvirt                         zshenv
+lightdm                         zshrc
+{cslinux1:~} who
+pxu200001 pts/0        2024-02-14 18:12 (10.50.241.129)
+ixf210007 pts/1        2024-02-14 19:25 (10.50.240.62)
+axa200208 pts/2        2024-02-14 18:46 (10.50.240.100)
+sxm220283 pts/3        2024-02-14 18:01 (10.161.169.238)
+lqv210000 pts/4        2024-02-14 18:52 (10.169.175.83)
+sxm220283 pts/5        2024-02-14 19:22 (10.173.167.131)
+sme210002 pts/6        2024-02-14 18:37 (10.50.241.168)
+jxy210015 pts/7        2024-02-14 18:39 (10.50.241.31)
+adl104020 pts/8        2024-02-14 19:19 (10.50.241.120)
+kxo210010 pts/9        2024-02-14 16:46 (10.50.240.206)
+axs210272 pts/10       2024-02-14 19:00 (10.50.241.63)
+jxt220067 pts/11       2024-02-14 17:46 (10.161.179.22)
+rma210002 pts/12       2024-02-14 19:03 (10.50.240.113)
+exn210011 pts/13       2024-02-14 19:25 (10.50.241.29)
+nxs210110 pts/14       2024-02-14 17:35 (10.50.241.144)
+oxs220001 pts/15       2024-02-14 18:22 (10.176.218.32)
+axs220159 pts/16       2024-02-14 18:25 (10.50.242.72)
+axs220159 pts/17       2024-02-14 18:53 (10.50.242.72)
+pxu200001 pts/20       2024-02-14 18:07 (10.50.241.129)
+odm230001 pts/21       2024-02-14 17:32 (10.161.171.70)
+sxs210424 pts/22       2024-02-14 18:03 (10.50.206.28)
+osa200001 pts/23       2024-02-14 16:29 (10.50.241.147)
+adl104020 pts/24       2024-02-14 18:57 (10.50.241.120)
+lxv220012 pts/25       2024-02-14 17:47 (10.161.184.252)
+rkm010300 pts/26       2024-02-14 18:45 (10.50.224.29)
+mxu220004 pts/27       2024-02-14 19:18 (me89116.campus.ad.utdallas.edu)
+yxr170005 pts/28       2024-02-14 17:17 (10.50.242.37)
+jaj200003 pts/29       2024-02-14 18:30 (10.50.244.216)
+jxg220051 pts/30       2024-02-14 17:29 (10.164.172.225)
+zfs210002 pts/31       2024-02-14 15:57 (10.50.206.124)
+kxo210010 pts/32       2024-02-14 19:09 (10.50.240.206)
+axv170037 pts/33       2024-02-14 17:59 (10.50.240.242)
+zxy220006 pts/34       2024-02-14 19:01 (10.162.165.3)
+csw220002 pts/36       2024-02-14 17:59 (10.159.191.125)
+dar220007 pts/37       2024-02-14 18:20 (10.161.163.54)
+wxs190012 pts/38       2024-02-14 19:20 (10.50.242.44)
+zss210000 pts/39       2024-02-14 18:22 (10.50.206.39)
+gsa210002 pts/41       2024-02-14 17:29 (10.161.173.117)
+lxa210028 pts/42       2024-02-14 17:47 (10.161.176.9)
+kxm220065 pts/45       2024-02-14 18:18 (10.50.242.49)
+kxs028100 pts/47       2024-01-23 13:13 (utd62373.campus.ad.utdallas.edu)
+axa210277 pts/49       2024-02-14 18:30 (10.50.206.117)
+yac200003 pts/50       2024-02-14 17:30 (10.50.240.244)
+rxm220030 pts/51       2024-02-14 16:12 (10.176.220.41)
+adl104020 pts/52       2024-02-14 18:31 (10.50.241.120)
+sxs210424 pts/53       2024-02-14 18:44 (10.178.165.127)
+wxs190012 pts/54       2024-02-14 17:10 (10.50.242.44)
+axb210115 pts/55       2024-02-14 17:35 (10.161.182.110)
+efg200000 pts/56       2024-02-14 17:48 (10.176.223.138)
+vxl220025 pts/58       2024-02-14 17:40 (10.161.182.194)
+mgt210000 pts/60       2024-02-14 18:08 (10.159.183.68)
+zss210000 pts/61       2024-02-14 18:19 (10.50.206.39)
+jxv220001 pts/63       2024-02-14 18:19 (10.176.193.202)
+jxb220076 pts/65       2024-02-14 16:19 (10.50.240.121)
+txt220018 pts/72       2024-02-14 16:20 (129.110.182.25)
+ozbirn   pts/98       2024-02-07 18:19 (10.176.92.18)
+ozbirn   pts/116      2024-01-31 17:49 (10.176.92.18)
+{cslinux1:~} date
+Wed Feb 14 19:28:47 CST 2024
+{cslinux1:~}
+2.
+{cslinux1:~} date
+Wed Feb 14 19:29:48 CST 2024
+{cslinux1:~}
+3.
+{cslinux1:~} history | tail -10
+   47  vim directorytimeandate
+   48  vim directorytimeanddate
+   49  head /etc/services
+   50  ls /etc
+   51  who
+   52  date
+   53  history
+   54  tail
+   55  history tail
+   56  history | tail -10
+{cslinux1:~}
+a.
+{cslinux1:~} !50
+ls /etc
+\                               dconf                         hba.conf.060418-15_45_59.bak  login.defs                        passwd-           shells.rpmnew
+1                               default                       hba.conf.060419-16_58_28.bak  login.defs.rpmnew                 passwd.161006     skel
+a2ps                            depmod.d                      hba.conf.061418-09_28_20.bak  logrotate.conf                    pbm2ppa.conf      slp.conf
+a2ps.cfg                        dhcp                          hba.conf.081318-11_45_04.bak  logrotate.d                       pcp               slp.spi
+a2ps-site.cfg                   DIR_COLORS                    hba.conf.110718-16_59_33.bak  logwatch                          pcp.conf          smartmontools
+abrt                            DIR_COLORS.256color           hba.conf.121918-08_02_10.bak  lsb-release.d                     pcp.env           snmp
+acpi                            DIR_COLORS.lightbgcolor       highlight                     lsm                               Pegasus           sos.conf
+adjtime                         dleyna-server-service.conf    host.conf                     lvm                               php.d             sound
+akonadi                         dnsmasq.conf                  hostname                      lynx.cfg                          php.ini           speech-dispatcher
+aliases                         dnsmasq.d                     hosts                         lynx.lss                          pinforc           ssh
+aliases.db                      dracut.conf                   hosts.allow                   lynx-site.cfg                     pkcs11            ssl
+aliases.rpmnew                  dracut.conf.d                 hosts.deny                    machine-id                        pki               sssd
+alsa                            e2fsck.conf                   hp                            magic                             plymouth          statetab
+alternatives                    edac                          html2psrc                     mailcap                           pm                statetab.d
+anacrontab                      egl                           idmapd.conf                   mail.rc                           pnm2ppa.conf      subgid
+ant.conf                        elinks.conf                   idmapd.conf._bak              makedumpfile.conf.sample          polkit-1          subuid
+ant.d                           enscript.cfg                  idmapd.conf.ipabkp            man_db.conf                       popt.d            subversion
+asound.conf                     environment                   ImageMagick-6                 mate-settings-daemon              portreserve       sudo.conf
+at.deny                         ethertypes                    init.d                        maven                             postfix           sudoers
+audisp                          exports                       inittab                       mfs                               ppp               sudoers.d
+audit                           exports.d                     inputrc                       mime.types                        prelink.conf      sudoers.lecture
+auto.direct                     extlinux.conf                 ipa                           mke2fs.conf                       prelink.conf.d    sudoers.rpmnew
+auto.direct.170106              fail2ban                      iproute2                      modprobe.d                        printcap          sudo-ldap.conf
+autofs.conf                     favicon.png                   ipsec.conf                    modulefiles                       profile           sysconfig
+autofs_ldap_auth.conf           fcoe                          ipsec.d                       modules-load.d                    profile.d         sysctl.conf
+auto.master                     festival                      ipsec.secrets                 motd                              protocols         sysctl.conf.rpmnew
+auto.master._20220314-163753    filesystems                   iscsi                         motd_05-10-2016                   pulse             sysctl.d
+auto.master._20230106-153909    filezilla                     issue                         motd.160525                       purple            systemd
+auto.master._20230124-093436    firefox                       issue.181018                  motd.d                            python            system-release
+auto.master._before_ipa_client  firewalld                     issue.d                       mtab                              qemu-ga           system-release-cpe
+auto.master.d                   flatpak                       issue.net                     mtools.conf                       qemu-kvm          target
+auto.master.orig                fonts                         issue.net.ORIG                multipath                         radvd.conf        tcsd.conf
+auto.misc                       foomatic                      issue.NEW                     my.cnf                            rc0.d             telegraf
+auto.net                        fprintd.conf                  issue.ORIG                    my.cnf.d                          rc1.d             terminfo
+auto.smb                        fstab                         java                          nanorc                            rc2.d             tmpfiles.d
+avahi                           fuse.conf                     jvm                           netconfig                         rc3.d             Trolltech.conf
+bash_completion.d               fwupd                         jvm-commmon                   NetworkManager                    rc4.d             trusted-key.key
+bashrc                          gconf                         jwhois.conf                   networks                          rc5.d             tuned
+binfmt.d                        gcrypt                        kde                           nfs.conf                          rc6.d             udev
+bluetooth                       gdbinit                       kde4rc                        nfsmount.conf                     rc.d              udisks2
+bonobo-activation               gdbinit.d                     kderc                         nscd.conf                         rc.local          unbound
+brltty                          gdm                           kdump.conf                    nslcd.conf                        rdma              updatedb.conf
+brltty.conf                     geoclue                       kdump.conf.rpmnew             nsswitch.conf                     redhat-lsb        UPower
+centos-release                  GeoIP.conf                    kernel                        nsswitch.conf._20220314-163753    redhat-release    vconsole.conf
+centos-release-upstream         ghostscript                   krb5.conf                     nsswitch.conf._20230106-153909    request-key.conf  vimrc
+certmonger                      gimp                          krb5.conf._20220314-163753    nsswitch.conf._20230124-093436    request-key.d     virc
+cgconfig.conf                   glvnd                         krb5.conf._20230106-153909    nsswitch.conf.bak                 resolv.conf       virtuoso
+cgconfig.d                      gnome-vfs-2.0                 krb5.conf._20230124-093436    nsswitch.conf._before_ipa_client  rpc               vmware-tools
+cgrules.conf                    gnupg                         krb5.conf._bak                nsswitch.conf.ipabkp              rpm               vpnc
+cgsnapshot_blacklist.conf       GREP_COLORS                   krb5.conf._before_ipa_client  nsswitch.conf.orig                rsyncd.conf       wgetrc
+chkconfig.d                     groff                         krb5.conf.d                   nsswitch.conf.rpmnew              rsyslog.conf      wpa_supplicant
+chrony.conf                     group                         krb5.conf.ipabkp              ntp                               rsyslog.d         X11
+chrony.conf.rpmnew              group-                        krb5.keytab                   ntp.conf                          rwtab             xdg
+chrony.keys                     grub2.cfg                     ksmtuned.conf                 numad.conf                        rwtab.d           xinetd.conf
+chrony.keys.rpmnew              grub.d                        ksysguarddrc                  odbcinst.ini                      samba             xinetd.d
+cifs-utils                      gshadow                       latrace.d                     oddjob                            sane.d            xml
+cockpit                         gshadow-                      ld.so.cache                   oddjobd.conf                      sasl2             xrdb
+cron.d                          gss                           ld.so.conf                    oddjobd.conf.d                    scl               yp.conf
+cron.daily                      gssproxy                      ld.so.conf.d                  omreg.cfg                         screenrc          yum
+cron.deny                       hba.conf                      libaudit.conf                 omreg.ini                         securetty         yum.conf
+cron.hourly                     hba.conf.010518-21_37_10.bak  libblockdev                   openldap                          security          yum.repos.d
+cron.monthly                    hba.conf.010919-12_58_44.bak  libibverbs.d                  openmpi-x86_64                    selinux           zlogin
+crontab                         hba.conf.013119-17_52_52.bak  libnl                         openvpn                           services          zlogout
+cron.weekly                     hba.conf.020119-09_31_23.bak  libpaper.d                    openwsman                         sestatus.conf     zprofile
+crypttab                        hba.conf.020419-06_18_42.bak  libreport                     opt                               setroubleshoot    zshenv
+csh.cshrc                       hba.conf.031218-10_35_58.bak  libuser.conf                  os-release                        setuptool.d       zshrc
+csh.login                       hba.conf.050918-10_36_17.bak  libvirt                       PackageKit                        sgml
+cups                            hba.conf.051018-11_34_42.bak  lightdm                       pam.d                             shadow
+cupshelpers                     hba.conf.051319-13_47_57.bak  locale.conf                   papersize                         shadow-
+dbus-1                          hba.conf.051719-14_42_48.bak  localtime                     passwd                            shells
+{cslinux1:~}
+b.
+{cslinux1:~} !-9
+date
+Wed Feb 14 19:39:33 CST 2024
+{cslinux1:~}
+c.
+{cslinux1:~} !!
+date
+Wed Feb 14 19:40:35 CST 2024
+{cslinux1:~}
+4.
+{cslinux1:~} alias d="date"
+{cslinux1:~} d
+Wed Feb 14 19:41:27 CST 2024
+{cslinux1:~}
+5.
+{cslinux1:~} alias ls="ls -l"
+{cslinux1:~} ls
+total 984
+drwx--x--x 2 wxs190012 sn       45 Jan 24 16:30 02
+drwx--x--x 3 wxs190012 sn       20 Jan 22 16:40 activities
+drwx--x--x 2 wxs190012 sn       28 Jan 25 13:29 activity02
+drwx--x--x 2 wxs190012 sn        0 Jan 25 12:59 activty02
+lrwxrwxrwx 1 wxs190012 sn       12 Jan 24 16:46 barfile -> test/barfile
+-rwx--x--x 1 wxs190012 sn       29 Feb 14 18:30 cptobak
+-rw------- 1 wxs190012 sn        0 Feb 14 18:28 cyptobak
+-rw------- 1 wxs190012 sn       29 Feb  5 16:29 dateinfo.txt
+-rw------- 1 wxs190012 sn       57 Feb 12 17:31 days
+-rw------- 1 wxs190012 sn        0 Feb 14 19:25 directorytimeandate
+-rwx--x--x 1 wxs190012 sn      115 Feb 14 19:25 directorytimeanddate
+-r--r--r-- 1 wxs190012 sn        0 Feb  5 17:20 dog
+-rwx--x--x 1 wxs190012 sn      103 Feb 14 18:09 first
+-rwx--x--x 1 wxs190012 sn      103 Feb 14 18:19 first.bak
+drwx--x--x 2 wxs190012 sn        0 Feb 14 18:22 hello
+-rw------- 1 wxs190012 sn        0 Feb 14 18:26 hello there
+-rw------- 1 wxs190012 sn        0 Feb 14 18:31 hello there.bak
+-rw------- 1 wxs190012 sn   303464 Feb 12 17:34 ls.out
+drwxr-xr-x 2 wxs190012 sn        0 Jan 22 16:24 perl5
+-rw------- 1 wxs190012 sn        0 Feb 14 17:29 practice
+drwx--x--x 2 wxs190012 ints      0 Jul  1  2020 public_html
+-rw------- 1 wxs190012 sn       13 Feb 12 17:27 savescreen.txt
+-rwx--x--x 1 wxs190012 sn      114 Feb 14 18:01 short
+drwx--x--x 4 wxs190012 sn       75 Feb 12 17:04 test
+drwx--x--x 3 wxs190012 sn       28 Jan 29 16:29 Test
+-rw------- 1 wxs190012 sn        0 Feb 14 18:22 there
+drwx--x--x 2 wxs190012 sn       21 Feb  5 17:03 two
+-rw------- 1 wxs190012 sn     8355 Feb  5 16:35 whoisthere
+-rw------- 1 wxs190012 sn     8411 Feb  5 16:30 whoson.txt
+drwxr-xr-x 3 wxs190012 ints     24 Jan 24  2023 WINDOWS
+drwx--x--x 3 wxs190012 sn       24 Feb  5 16:17 work
+{cslinux1:~} unalias ls
+{cslinux1:~} ls
+02          dateinfo.txt          hello            savescreen.txt  whoson.txt
+activities  days                  hello there      short           WINDOWS
+activity02  directorytimeandate   hello there.bak  test            work
+activty02   directorytimeanddate  ls.out           Test
+barfile     dog                   perl5            there
+cptobak     first                 practice         two
+cyptobak    first.bak             public_html      whoisthere
+{cslinux1:~} 
+6.
+#I would define an alias in a rc file in my Linux shell like bashrc so it is available everytime I need to use the alias.
+7.
+{cslinux1:~} function welcome { echo Welcome to my computer.; }
+{cslinux1:~} welcome
+Welcome to my computer.
+{cslinux1:~}
+8.
+{cslinux1:~} function long { dsate; ls -l; }
+{cslinux1:~} long
+bash: dsate: command not found...
+total 984
+drwx--x--x 2 wxs190012 sn       45 Jan 24 16:30 02
+drwx--x--x 3 wxs190012 sn       20 Jan 22 16:40 activities
+drwx--x--x 2 wxs190012 sn       28 Jan 25 13:29 activity02
+drwx--x--x 2 wxs190012 sn        0 Jan 25 12:59 activty02
+lrwxrwxrwx 1 wxs190012 sn       12 Jan 24 16:46 barfile -> test/barfile
+-rwx--x--x 1 wxs190012 sn       29 Feb 14 18:30 cptobak
+-rw------- 1 wxs190012 sn        0 Feb 14 18:28 cyptobak
+-rw------- 1 wxs190012 sn       29 Feb  5 16:29 dateinfo.txt
+-rw------- 1 wxs190012 sn       57 Feb 12 17:31 days
+-rw------- 1 wxs190012 sn        0 Feb 14 19:25 directorytimeandate
+-rwx--x--x 1 wxs190012 sn      115 Feb 14 19:25 directorytimeanddate
+-r--r--r-- 1 wxs190012 sn        0 Feb  5 17:20 dog
+-rwx--x--x 1 wxs190012 sn      103 Feb 14 18:09 first
+-rwx--x--x 1 wxs190012 sn      103 Feb 14 18:19 first.bak
+drwx--x--x 2 wxs190012 sn        0 Feb 14 18:22 hello
+-rw------- 1 wxs190012 sn        0 Feb 14 18:26 hello there
+-rw------- 1 wxs190012 sn        0 Feb 14 18:31 hello there.bak
+-rw------- 1 wxs190012 sn   303464 Feb 12 17:34 ls.out
+drwxr-xr-x 2 wxs190012 sn        0 Jan 22 16:24 perl5
+-rw------- 1 wxs190012 sn        0 Feb 14 17:29 practice
+drwx--x--x 2 wxs190012 ints      0 Jul  1  2020 public_html
+-rw------- 1 wxs190012 sn       13 Feb 12 17:27 savescreen.txt
+-rwx--x--x 1 wxs190012 sn      114 Feb 14 18:01 short
+drwx--x--x 4 wxs190012 sn       75 Feb 12 17:04 test
+drwx--x--x 3 wxs190012 sn       28 Jan 29 16:29 Test
+-rw------- 1 wxs190012 sn        0 Feb 14 18:22 there
+drwx--x--x 2 wxs190012 sn       21 Feb  5 17:03 two
+-rw------- 1 wxs190012 sn     8355 Feb  5 16:35 whoisthere
+-rw------- 1 wxs190012 sn     8411 Feb  5 16:30 whoson.txt
+drwxr-xr-x 3 wxs190012 ints     24 Jan 24  2023 WINDOWS
+drwx--x--x 3 wxs190012 sn       24 Feb  5 16:17 work
+{cslinux1:~}
+9.
+#Like in question 6, I would define functions in a rc file like bashrc so that the functions are easily accessible for me to use when I log in.

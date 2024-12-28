@@ -1,0 +1,286 @@
+1.
+{cslinux1:~} vim all
+#!/bin/bash
+echo "Name of calling program: $0"
+echo "Number of positional parameters: $#"
+echo "List of positional parameters: $@"
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT --
+{cslinux1:~} chmod +x all
+{cslinux1:~} ./all 0 1 5
+Name of calling program: ./all
+Number of positional parameters: 3
+List of positional parameters: 0 1 5
+{cslinux1:~}                                                                                                                        
+2.
+{cslinux1:~} ln -s all linkto
+{cslinux1:~} ./linkto 1 2
+Name of calling program: ./linkto
+Number of positional parameters: 2
+List of positional parameters: 1 2
+{cslinux1:~}
+3.
+{cslinux1:~} vim myname
+#!/bin/bash
+echo "Enter your name: "
+read name
+echo "Hello $name"
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT --  
+{cslinux1:~} chmod +x myname
+{cslinux1:~} ./myname
+Enter your name:
+Winston Shih
+Hello Winston Shih
+{cslinux1:~}
+4.
+{cslinux1:~} mv myname myname2
+{cslinux1:~} vim myname2
+#!/bin/bash
+echo "Enter your name:"
+read name
+echo "$name" > $$.name
+cat $$.name
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT --   
+{cslinux1:~} chmod +x myname2
+{cslinux1:~} ./myname2
+Enter your name:
+Winston Shih
+Winston Shih
+{cslinux1:~}
+5.
+{cslinux1:~} vim looper
+for i in "$@"
+do
+echo $i
+done
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+:wq
+{cslinux1:~} chmod +x looper
+{cslinux1:~} ./looper 6 2 3 4
+6
+2
+3
+4
+{cslinux1:~}
+6.
+{cslinux1:~} mv looper looper2
+{cslinux1:~} vim looper2
+for arg in "$@";
+do
+  echo $arg;
+done
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+:wq
+{cslinux1:~} chmod +x looper
+{cslinux1:~} ./looper2 1 3 5 7 9
+1
+3
+5
+7
+9
+{cslinux1:~}
+7.
+{cslinux1:~} vim ifthen
+#!/bin/bash
+echo "Input a string: "
+read string
+if test -n $string
+then
+  echo "You entered: " $string
+else
+  echo "Where is your string?"
+fi
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+:wq
+{cslinux1:~} chmod +x ifthen
+{cslinux1:~} ./ifthen
+Input a string:
+hello
+You entered:  hello
+{cslinux1:~}
+8.
+{cslinux1:~} vim echomyvar
+#/bin/bash
+echo "The PID is: "
+echo $$
+echo "The MyVar value is: "
+echo $myvar
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT --    
+{cslinux1:~} ./echomyvar
+The PID is:
+31257
+
+{cslinux1:~} myvar=10
+{cslinux1:~} echo $myvar
+10
+{cslinux1:~} ./echomyvar
+The PID is:
+32791
+The MyVar value is:
+
+{cslinux1:~} export myvar
+{cslinux1:~} ./echomyvar
+The PID is:
+33597
+The MyVar value is:
+10
+{cslinux1:~} declare -x myvar
+{cslinux1:~} ./echomyvar
+The PID is:
+34510
+The MyVar value is:
+10
+{cslinux1:~} export -n myvar
+{cslinux1:~} ./echomyvar
+The PID is:
+34119
+The MyVar value is:
+
+{cslinux1:~}

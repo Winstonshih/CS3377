@@ -1,0 +1,194 @@
+{cslinux1:~} g++ -std=c++11 sockserver.cpp -o sockserver
+{cslinux1:~} g++ -std=c++11 sockclient.cpp -o sockclient
+{cslinux1:~} ./sockserver &
+[1] 32187
+{cslinux1:~} ./sockclient
+Try to guess a number between 1 and 100
+Current Try Number : 1
+Enter number guess : 4
+
+Server reply :
+
+The number is greater than : 4
+
+Try to guess a number between 1 and 100
+Current Try Number : 2
+Enter number guess : 8
+
+Server reply :
+
+The number is greater than : 8
+
+Try to guess a number between 1 and 100
+Current Try Number : 3
+Enter number guess : 50
+
+Server reply :
+
+The number is greater than : 50
+
+Try to guess a number between 1 and 100
+Current Try Number : 4
+Enter number guess : 80
+
+Server reply :
+
+The number is greater than : 80
+
+Try to guess a number between 1 and 100
+Current Try Number : 5
+Enter number guess : 90
+
+Server reply :
+
+The number is greater than : 90
+
+Try to guess a number between 1 and 100
+Current Try Number : 6
+Enter number guess : 100
+
+Server reply :
+
+The number is less than : 100
+
+Try to guess a number between 1 and 100
+Current Try Number : 7
+Enter number guess : 99
+
+Server reply :
+
+The number is less than : 99
+
+Try to guess a number between 1 and 100
+Current Try Number : 8
+Enter number guess : 95
+
+Server reply :
+
+The number is less than : 95
+
+Try to guess a number between 1 and 100
+Current Try Number : 9
+Enter number guess : 92
+
+Server reply :
+
+The number is less than : 92
+
+Try to guess a number between 1 and 100
+Current Try Number : 10
+Enter number guess : 91
+
+Server reply :
+
+You Win !! The number is : 91
+
+Client disconnected
+{cslinux1:~} ./sockserver &
+[2] 33339
+[1]   Done                    ./sockserver
+{cslinux1:~} ./sockclient
+Try to guess a number between 1 and 100
+Current Try Number : 1
+Enter number guess : 1
+
+Server reply :
+
+The number is greater than : 1
+
+Try to guess a number between 1 and 100
+Current Try Number : 2
+Enter number guess : 2
+
+Server reply :
+
+The number is greater than : 2
+
+Try to guess a number between 1 and 100
+Current Try Number : 3
+Enter number guess : 3
+
+Server reply :
+
+The number is greater than : 3
+
+Try to guess a number between 1 and 100
+Current Try Number : 4
+Enter number guess : 4
+
+Server reply :
+
+The number is greater than : 4
+
+Try to guess a number between 1 and 100
+Current Try Number : 5
+Enter number guess : 5
+
+Server reply :
+
+The number is greater than : 5
+
+Try to guess a number between 1 and 100
+Current Try Number : 6
+Enter number guess : 6
+
+Server reply :
+
+The number is greater than : 6
+
+Try to guess a number between 1 and 100
+Current Try Number : 7
+Enter number guess : 7
+
+Server reply :
+
+The number is greater than : 7
+
+Try to guess a number between 1 and 100
+Current Try Number : 8
+Enter number guess : 100
+
+Server reply :
+
+The number is less than : 100
+
+Try to guess a number between 1 and 100
+Current Try Number : 9
+Enter number guess : 99
+
+Server reply :
+
+The number is less than : 99
+
+Try to guess a number between 1 and 100
+Current Try Number : 10
+Enter number guess : 98
+
+Server reply :
+
+The number is less than : 98
+
+Try to guess a number between 1 and 100
+Current Try Number : 11
+Enter number guess : 97
+
+Server reply :
+
+The number is less than : 97
+
+Try to guess a number between 1 and 100
+Current Try Number : 12
+Enter number guess : 4
+
+Server reply :
+
+The number is greater than : 4
+
+The maximum number of tries 12 is done
+Send Random Number
+The random number is : 48
+
+Game is over
+Client disconnected
+{cslinux1:~}
+

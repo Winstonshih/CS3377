@@ -1,0 +1,78 @@
+1.
+{cslinux1:~} myname="Winston Shih"
+{cslinux1:~} echo $myname
+Winston Shih
+{cslinux1:~} echo '$myname'
+$myname
+{cslinux1:~} echo "$myname"
+Winston Shih
+{cslinux1:~}
+2.
+{cslinux1:~} readonly myname
+{cslinux1:~} myname="Anakin Skywalker"
+-bash: myname: readonly variable
+{cslinux1:~}
+3.
+{cslinux1:~} $HOME
+-bash: /home/012/w/wx/wxs190012: Is a directory
+{cslinux1:~} ~
+-bash: /home/012/w/wx/wxs190012: Is a directory
+{cslinux1:~} ls ~
+02          activity02  barfile  cyptobak      days  first      hello        hello there.bak  perl5     public_html     short  Test   two         whoson.txt  work
+activities  activty02   cptobak  dateinfo.txt  dog   first.bak  hello there  ls.out           practice  savescreen.txt  test   there  whoisthere  WINDOWS
+{cslinux1:~} 
+4.
+{cslinux1:~} echo $PATH
+/usr/local/bin:/usr/bin:/bin:/usr/ccs/bin:/sbin:/usr/sbin:/usr/local/openwin/bin:/usr/openwin/bin
+{cslinux1:~}
+5.
+{cslinux1:~} vim directorytimeanddate
+#!/bin/bash
+now="$(date)"
+printf "Date: %s\n" "$now"
+printf "Home directory: %s\n" $HOME
+printf "PATH: %s\n" $PATH
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT --       
+{cslinux1:~} chmod +x directorytimeanddate
+{cslinux1:~} ./directorytimeanddate
+Date: Wed Feb 14 19:24:27 CST 2024
+Home directory: /home/012/w/wx/wxs190012
+PATH: /usr/local/bin:/usr/bin:/bin:/usr/ccs/bin:/sbin:/usr/sbin:/usr/local/openw                                                                                        in/bin:/usr/openwin/bin
+{cslinux1:~}
+

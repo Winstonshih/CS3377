@@ -1,0 +1,79 @@
+{cslinux1:~} g++ -std=c++11 forkpipe.cpp -o forkpipe
+{cslinux1:~} ./forkpipe
+
+EXCEPTION:
+Oh my Goodness...
+Usage: ./forkpipe <number> in forkpipe.cpp",line:148
+
+
+Press the enter key once or twice to leave...
+
+
+{cslinux1:~} ./forkpipe 2
+
+
+In Parent: Write to pipe getQuoteMessage sent Message: Get Quote
+In Child : Read from pipe pipeParentWriteChildMessage read Message: Get Quote
+In Child : Write to pipe pipeParentReadChildMessage sent Message:
+“The whole culture is telling you to hurry, while the art tells you to take your time. Always listen to the art.” ~Junot Diaz
+
+In Parent: Read from pipe pipeParentReadChildMessage read Message:
+“The whole culture is telling you to hurry, while the art tells you to take your time. Always listen to the art.” ~Junot Diaz
+
+
+----------------------------------------------
+In Parent: Write to pipe getQuoteMessage sent Message: Get Quote
+In Child : Read from pipe pipeParentWriteChildMessage read Message: Get Quote
+In Child : Write to pipe pipeParentReadChildMessage sent Message:
+“I used to think I was the strangest person in the world but then I thought there are so many people in the world, there must be someone just like me who feels bizarre and flawed in the same ways I do. I would imagine her, and imagine that she must be out there thinking of me too. Well, I hope that if you are out there and read this and know that, yes, it’s true I’m here, and I’m just as strange as you.” ~Frida Kahlo
+
+In Parent: Read from pipe pipeParentReadChildMessage read Message:
+“I used to think I was the strangest person in the world but then I thought there are so many people in the world, there must be someone just like me who feels bizarre and flawed in the same ways I do. I would imagine her, and imagine that she must be out there thinking of me too. Well, I hope that if you are out there and read this and know that, yes, it’s true I’m here, and I’m just as strange as you.” ~Frida Kahlo
+
+
+----------------------------------------------
+In Parent: Write to pipe ParentWriteChildExitMessage: sent Message Exit
+Parent Done
+In Child : Read from pipe pipeParentWriteChildMessage read Message: Exit
+Child Done
+
+{cslinux1:~} ./forkpipe 3
+
+
+In Parent: Write to pipe getQuoteMessage sent Message: Get Quote
+In Child : Read from pipe pipeParentWriteChildMessage read Message: Get Quote
+In Child : Write to pipe pipeParentReadChildMessage sent Message:
+“Vulnerability is the birthplace of innovation, creativity, and change.” ~Brené Brown
+
+In Parent: Read from pipe pipeParentReadChildMessage read Message:
+“Vulnerability is the birthplace of innovation, creativity, and change.” ~Brené Brown
+
+
+----------------------------------------------
+In Parent: Write to pipe getQuoteMessage sent Message: Get Quote
+In Child : Read from pipe pipeParentWriteChildMessage read Message: Get Quote
+In Child : Write to pipe pipeParentReadChildMessage sent Message:
+“You have to know how to accept rejection and reject acceptance.” ~Ray Bradbury
+
+In Parent: Read from pipe pipeParentReadChildMessage read Message:
+“You have to know how to accept rejection and reject acceptance.” ~Ray Bradbury
+
+
+----------------------------------------------
+In Parent: Write to pipe getQuoteMessage sent Message: Get Quote
+In Child : Read from pipe pipeParentWriteChildMessage read Message: Get Quote
+In Child : Write to pipe pipeParentReadChildMessage sent Message:
+“Learn the rules like a pro, so you can break them like an artist.” ~Pablo Picasso
+
+In Parent: Read from pipe pipeParentReadChildMessage read Message:
+“Learn the rules like a pro, so you can break them like an artist.” ~Pablo Picasso
+
+
+----------------------------------------------
+In Parent: Write to pipe ParentWriteChildExitMessage: sent Message Exit
+In Child : Read from pipe pipeParentWriteChildMessage read Message: Exit
+Parent Done
+Child Done
+
+{cslinux1:~}
+
